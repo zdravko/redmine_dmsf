@@ -1,6 +1,11 @@
 Redmine DMSF Plugin
 ===================
 
+<<<<<<< HEAD
+=======
+The current version of Redmine DMSF is **1.4.5p1**
+
+>>>>>>> master
 Redmine DMSF is Document Management System Features plugin for Redmine issue tracking system; It is aimed to replace current Redmine's Documents module.
 
 Redmine DMSF now comes bundled with Webdav functionality: if switched on within plugin settings this will be accessible from /dmsf/webdav.
@@ -48,8 +53,13 @@ As of version 1.4.4 of this plugin:
   * Bundler 1.1 or greater (Gem)
   * Redmine 2.0.x 
   * Rails 3.2.x (Inline with Redmine installation requirement) 
+<<<<<<< HEAD
   * zip (Gem)
   * Nikogiri 1.4.2 or greater (Gem)
+=======
+  * rubyzip (Gem)
+  * Nokogiri 1.4.2 or greater (Gem)
+>>>>>>> master
   * UUIDTools 2.1.1 or greater (less than 2.2.0) (Gem)
   * simple_enum (Gem)
 
@@ -86,7 +96,11 @@ From Omega documentation:
 
 On Debian use:
 
+<<<<<<< HEAD
 ```apt-get install libxapian-ruby1.8 xapian-omega libxapian-dev xpdf antiword unzip\
+=======
+```apt-get install libxapian-ruby1.8 xapian-omega libxapian-dev xpdf xpdf-utils antiword unzip\
+>>>>>>> master
 catdoc libwpd8c2a libwps-0.1-1 gzip unrtf catdvi djview djview3```
 
 On Ubuntu use:
@@ -172,7 +186,11 @@ Uninstalling DMSF
 Before uninstalling the DMSF plugin, please ensure that the Redmine instance is stopped.
 
 1. `cd [redmine-install-dir]`
+<<<<<<< HEAD
 2. `rake redmine:plugin:migrate NAME=redmine_dmsf VERSION=0`
+=======
+2. `rake redmine:plugins:migrate NAME=redmine_dmsf VERSION=0 RAILS_ENV=production`
+>>>>>>> master
 3. `rm plugins/redmine_dmsf -Rf`
 
 After these steps re-start your instance of Redmine.
